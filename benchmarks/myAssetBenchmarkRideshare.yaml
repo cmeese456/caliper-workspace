@@ -1,0 +1,160 @@
+test:
+    name: basic-contract-benchmark
+    description: test benchmark
+    workers:
+      type: local
+      number: 10
+    rounds:
+      - label: fifty
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 50
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+      - label: onehundred
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 100
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+      - label: onefifty
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 150
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+
+      - label: twohundred
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 200
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+
+      - label: twofifty
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 250
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+
+      - label: threehundred
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 300
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+
+      - label: threefifty
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 350
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+
+      - label: fourhundred
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 400
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+
+      - label: fourfifty
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 450
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+
+      - label: fivehundred
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 500
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+
+      - label: fivefifty
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 550
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
+
+      - label: sixhundred
+        description: Read asset benchmark
+        txDuration: 30
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 600
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic
